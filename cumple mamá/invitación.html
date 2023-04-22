@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Invitación de cumpleaños</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<!-- Custom CSS -->
+	<style>
+		body {
+			background-color: #f8f9fa;
+			font-family: 'Helvetica Neue', sans-serif;
+		}
+		.container {
+			margin-top: 20px;
+		}
+		.carousel-item img {
+			width: 100%;
+		}
+		@media (max-width: 576px) {
+			h1 {
+				font-size: 2rem;
+			}
+			.carousel-item img {
+				height: 200px;
+			}
+			.container {
+				margin-top: 0;
+			}
+		}
+	</style>
+</head>
+<body>
+	<main>
+
+		<!-- Header -->
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<a class="navbar-brand" href="#">Cumpleaños 50</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#detalles">Detalles de la fiesta</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#confirmacion">Confirma tu asistencia</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contacto">Contacto</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<!-- Carousel -->
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="https://images.unsplash.com/photo-1562184482-1d42b74aa168" alt="Decoración de cumpleaños">
+				</div>
+				<div class="carousel-item">
+					<img src="https://images.unsplash.com/photo-1593447884895-6d48c198f9ed" alt="Mesa de postres">
+				</div>
+				<div class="carousel-item">
+					<img src="https://images.unsplash.com/photo-1516117172878-fd2c41f4a759" alt="Globos de cumpleaños">
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Anterior</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Siguiente</span>
+			</a>
+		</div>
+
+		<!-- Detalles de la fiesta -->
+		<section id="detalles" class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h2>Detalles de la fiesta</h2>
+					<p><strong>Fecha:</strong> Sábado 15 de mayo</p>
+					<p><strong>Hora:</strong> 7:00 PM</p>
+					<p><strong>Lugar:</strong> Casa de eventos "Los Girasoles"</p>
+					<p><strong>Dirección:</strong> Calle 10 #25-65, Los Pinos</p>
+					<p><strong>Atuendo:</strong> Formal</p>
+				</div>
+				<div class="col-md-6">
+					<img src="https://images.unsplash.com/photo-1542821850-9590e5e2f5c5" alt="Decoración de la fiesta">
+				</div>
+			</div>
+		</section>
+
+		<!-- Confirma tu asistencia -->
+		<section id="confirmacion" class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<img src="https://images.unsplash.com/photo-1559674397-34f2c9ebfd9c" alt="Mesa de la fiesta">
+				</div>
+				<div class="col-md-6">
+					<h2>Confirma tu asistencia</h2>
+					<form>
+						<div class="form-group">
+							<label for="nombre">Nombre completo:</label>
+							<input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre completo">
+						</div>
+						<div class="form-group">
+							<label for="correo">Correo electrónico:</label>
+							<input type="email" class="form-control" id="correo" placeholder="Escribe tu correo electrónico">
+						</div>
+						<div class="form-group">
+							<label for="telefono">Teléfono:</label>
+							<input type="tel" class="form-control" id="telefono" placeholder="Escribe tu número de teléfono">
+						</div>
+						<div class="form-group">
+							<label for="asistencia">¿Asistirás a la fiesta?</label>
+							<select class="form-control" id="asistencia">
+								<option>Selecciona una opción</option>
+								<option>Si, confirmo mi asistencia</option>
+								<option>No podré asistir</option>
+							</select>
+						</div>
+						<button type="submit" class="btn btn-primary">Enviar</button>
+					</form>
+				</div>
+			</div>
+		</section>
+
+<!-- Sección de contacto -->
+	<section id="contacto" class="bg-light">
+		<div class="container">
+			<h2 class="text-center">Confirma tu asistencia</h2>
+			<form>
+				<div class="form-group">
+					<label for="nombre">Nombre:</label>
+					<input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+				</div>
+				<div class="form-group">
+					<label for="email">Email:</label>
+					<input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico">
+				</div>
+				<div class="form-group">
+					<label for="telefono">Teléfono:</label>
+					<input type="tel" class="form-control" id="telefono" placeholder="Ingresa tu número de teléfono">
+				</div>
+				<div class="form-group">
+					<label for="asistencia">¿Asistirás?</label>
+					<select class="form-control" id="asistencia">
+						<option>Selecciona una opción</option>
+						<option>Si, asistiré</option>
+						<option>No, no podré asistir</option>
+					</select>
+				</div>
+				<button type="submit" class="btn btn-primary">Enviar</button>
+			</form>
+		</div>
+	</section>

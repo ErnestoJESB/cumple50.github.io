@@ -1,0 +1,105 @@
+header {
+    padding: 50px 0;
+}
+
+.bg-header {
+    background-color: #D291BC;
+}
+
+h1.display-3 {
+    font-family: 'Pacifico', cursive;
+    font-size: 60px;
+    line-height: 1.5;
+    color: #FFFFFF;
+    text-shadow: 2px 2px #333333;
+}
+
+section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #555555;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.btn-secondary {
+    margin-top: 20px;
+    background-color: #957DAD;
+    border-color: #957DAD;
+}
+
+.btn-secondary:hover, .btn-secondary:focus {
+    background-color: #FEC8D8;
+    border-color: #FEC8D8;
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+
+.animated.pulse {
+    animation-duration: 2s;
+}
+
+.animated.pulse.infinite {
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pulse {
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+/*Fuente de la letra*/
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+@media (max-width: 576px) {
+    h1.display-3 {
+        font-size: 40px;
+    }
+}
